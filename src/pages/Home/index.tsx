@@ -1,5 +1,7 @@
+import { Footer } from "../../components/footer";
 import NavBar from "../../components/navbar";
 import { CapaSection } from "../../sections/capaSection";
+import { QuemSomosSection } from "../../sections/quemSomosSection";
 import { ServicosSection } from "../../sections/servicosSection";
 
 export const Home = () => {
@@ -7,8 +9,9 @@ export const Home = () => {
     <>
       <NavBar />
       <CapaSection></CapaSection>
-      <p>OLA MUNDO</p>
       <ServicosSection />
+      <QuemSomosSection />
+      <Footer />
     </>
   );
 };
