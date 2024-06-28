@@ -20,6 +20,7 @@ export const CarrosselEstrutura: React.FC<CarrosselEstruturaProps> = ({
   return (
     <CarouselContainer>
       <Swiper
+        loop={true}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
