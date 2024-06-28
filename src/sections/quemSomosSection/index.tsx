@@ -1,13 +1,8 @@
-import {
-  Container,
-  Paragraph,
-  QuemSomosSectionContainer,
-  Title,
-} from "./styles";
+import { Container, Paragraph, SectionContainer, Title } from "./styles";
 
 export const QuemSomosSection = () => {
   return (
-    <QuemSomosSectionContainer>
+    <SectionContainer>
       <Container>
         <div>
           <Title>Quem Somos?</Title>
@@ -27,6 +22,6 @@ export const QuemSomosSection = () => {
           </Paragraph>
         </div>
       </Container>
-    </QuemSomosSectionContainer>
+    </SectionContainer>
   );
 };

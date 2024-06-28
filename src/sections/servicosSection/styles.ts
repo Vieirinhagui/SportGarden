@@ -1,34 +1,58 @@
 import styled from "styled-components";
 
-export const ServicosSectionContainer = styled.section`
+export const SectionContainer = styled.section`
   width: 100vw;
   height: 100vh;
-  padding: 180px;
+  padding: 5rem 10rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-export const ServicosContainer = styled.div`
-  width: 57vw;
+export const Container = styled.div`
+  width: 100%;
+  height: 80%;
 
   display: flex;
   align-items: start;
   justify-content: center;
-  gap: 64px;
+  gap: 4rem;
 
   text-align: left;
 `;
 
-export const ImagesContainer = styled.div`
-  margin-top: 2rem;
+export const CardsContainer = styled.div`
+  width: 30%;
+  height: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: start;
+  flex-direction: column;
+  gap: 2rem;
+`;
+export const InfosContainer = styled.div`
+  width: 40%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 2rem;
+`;
+export const ImagesContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 2.5rem;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
 `;
 export const TitleSpan = styled.span`
   font-size: 50px;
@@ -37,17 +61,10 @@ export const TitleSpan = styled.span`
 `;
 
 export const StyledParagraph = styled.p`
+  width: 100%;
   font-size: 20px;
   color: black;
   text-align: left;
-`;
-
-export const InfosContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
 `;
 
 export const StyledButton = styled.button`

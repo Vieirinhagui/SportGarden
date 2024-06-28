@@ -2,17 +2,18 @@ import { Card } from "../../components/card";
 import {
   ImagesContainer,
   InfosContainer,
-  ServicosContainer,
-  ServicosSectionContainer,
+  Container,
+  SectionContainer,
   StyledButton,
   StyledParagraph,
   TitleSpan,
+  CardsContainer,
 } from "./styles";
 export const ServicosSection = () => {
   return (
-    <ServicosSectionContainer>
-      <ServicosContainer>
-        <div>
+    <SectionContainer>
+      <Container>
+        <CardsContainer>
           <Card
             imgUrl="quadra_icon.png"
             title="Construção de Quadras"
@@ -28,7 +29,7 @@ export const ServicosSection = () => {
             title="Acessórios em Geral"
             text="Temos tudo para completar o seu projeto. Trabalhamos também com cercas, telas, iluminação e cobertura. "
           />
-        </div>
+        </CardsContainer>
         <InfosContainer>
           <div>
             <TitleSpan>Conheça nossos serviços</TitleSpan>
@@ -49,7 +50,7 @@ export const ServicosSection = () => {
           </ImagesContainer>
           <StyledButton>VER MAIS</StyledButton>
         </InfosContainer>
-      </ServicosContainer>
-    </ServicosSectionContainer>
+      </Container>
+    </SectionContainer>
   );
 };

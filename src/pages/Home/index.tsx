@@ -8,7 +8,7 @@ import { ServicosSection } from "../../sections/servicosSection";
 export const Home = () => {
   return (
     <>
-      <NavBar />
+      <NavBar isActive={true} />
       <CapaSection></CapaSection>
       <ServicosSection />
       <QuemSomosSection />

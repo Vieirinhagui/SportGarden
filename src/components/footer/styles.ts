@@ -11,7 +11,7 @@ export const Container = styled.div`
 export const FooterSection = styled.section`
   width: 100vw;
   height: auto;
-  padding: 64px 175px;
+  padding: 175px;
   background-color: #00632c;
   display: flex;
   align-items: start;
@@ -157,4 +157,19 @@ export const RedesContainer = styled.div`
 
 export const Logo = styled.img`
   width: 70%;
-`
+`;
+
+export const BlackFooter = styled.div`
+  width: 100vw;
+  height: 39px;
+  background-color: #2a2a2a;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 20px;
+  }
+`;

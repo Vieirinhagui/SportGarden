@@ -1,25 +1,27 @@
 import styled from "styled-components";
 
-export const QuemSomosSectionContainer = styled.section`
+export const SectionContainer = styled.section`
   width: 100vw;
-  height: 50vh;
+  height:auto;
+  padding: 5rem 10rem;
   background-color: #f3f3f3;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  padding: 180px 64px;
 `;
 
 export const Container = styled.div`
-  width: 100%;
+  width: 70%;
+  height: 100%;
+
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  align-items: start;
+  justify-content: space-between;
+  text-align: left;
+
   div {
-    width: 40%;
+    width: 35%;
   }
 `;
 

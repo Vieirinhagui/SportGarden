@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const colors = {
@@ -160,8 +161,8 @@ export const ButtonsNavBar = styled.div`
     text-decoration: none;
   }
   a:hover {
-    color: #00632C;
-    transition: .2s;
+    color: #00632c;
+    transition: 0.2s;
   }
 `;
 
@@ -200,3 +201,5 @@ export const IconsContainer = styled.div`
   flex-direction: row;
   gap: 6rem;
 `;
+
+export const StyledLink = styled(Link)``;
