@@ -1,5 +1,5 @@
-import { CarrosselEstrutura } from "../../components/carrossel";
-import { Container, SectionContainer, StyledButton, TitleSpan } from "./styles";
+import { CarrosselEstrutura } from "../../components/Carrossel";
+import { Button, Container, SectionContainer, Title } from "./styles";
 
 export const PortifolioSection = () => {
   const fotos = [
@@ -12,9 +12,9 @@ export const PortifolioSection = () => {
   return (
     <SectionContainer>
       <Container>
-        <TitleSpan>Portifólio</TitleSpan>
+        <Title>Portifólio</Title>
         <CarrosselEstrutura fotos={fotos} />
-        <StyledButton>VER MAIS</StyledButton>
+        <Button>VER MAIS</Button>
       </Container>
     </SectionContainer>
   );

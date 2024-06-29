@@ -18,10 +18,10 @@ export const NavBarSection = styled.nav`
   flex-direction: column;
 `;
 export const NavBarContainer = styled.div`
-  position: absolute; // Posicionamento
+  /* position: absolute; // Posicionamento
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 10; */
 
   display: flex; // Flexbox
   flex-direction: row;
@@ -57,6 +57,12 @@ export const NavBarContainer = styled.div`
 export const Logo = styled.img`
   width: 50vw;
   @media (min-width: 768px) {
+    width: 40vw;
+  }
+  @media (min-width: 1200px) {
+    width: 30vw;
+  }
+  @media screen and (min-width: 1440px) {
     width: 20vw;
   }
 `;
@@ -138,24 +144,20 @@ export const HamburguerButton = styled.button<HamburguerButtonProps>`
 export const ButtonsNavBar = styled.div`
   background-color: #1e1e1e;
   width: 100vw;
-  height: 32px;
   color: white;
-
-  position: absolute; // Posicionamento
-  top: 170px;
-  left: 0;
-  z-index: 10;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+  row-gap: 1rem;
 
   padding: 8px 0;
   box-sizing: border-box;
 
   a {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
     color: white;
     text-decoration: none;
@@ -200,6 +202,16 @@ export const IconsContainer = styled.div`
   justify-content: center;
   flex-direction: row;
   gap: 6rem;
+
+  @media screen and (min-width: 768px) {
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 5rem;
+  }
 `;
 
 export const StyledLink = styled(Link)``;

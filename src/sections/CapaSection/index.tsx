@@ -1,8 +1,8 @@
-import { CapaSectionContainer, Paragraph, Title } from "./styles";
+import { Paragraph, SectionContainer, Title } from "./styles";
 
 export const CapaSection = () => {
   return (
-    <CapaSectionContainer>
+    <SectionContainer>
       <Title>Construção e Reforma de Quadras Esportivas</Title>
       <Paragraph>
         Aqui, unimos paixão e expertise para criar quadras esportivas de
@@ -10,6 +10,6 @@ export const CapaSection = () => {
         espaços em verdadeiras arenas de excelência, impulsionando o seu jogo
         para um novo nível.
       </Paragraph>
-    </CapaSectionContainer>
+    </SectionContainer>
   );
 };
