@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Button,
   CardContainer,
@@ -13,6 +14,8 @@ import {
 } from "./styles";
 
 export const ServicosSection = () => {
+  const [width] = useState(window.innerWidth);
+  console.log(width);
   return (
     <SectionContainer>
       <Container>

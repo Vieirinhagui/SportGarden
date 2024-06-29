@@ -76,7 +76,11 @@ const NavBar = ({ isActive }: NavBarProps) => {
         </Link>
         {isMobile ? (
           <>
-            <HamburguerButton isOpen={isMenuOpen} onClick={toggleIcon}>
+            <HamburguerButton
+              isOpen={isMenuOpen}
+              onClick={toggleIcon}
+              title="Menu Hamburguer"
+            >
               <div />
               <div />
               <div />

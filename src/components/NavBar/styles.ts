@@ -18,11 +18,6 @@ export const NavBarSection = styled.nav`
   flex-direction: column;
 `;
 export const NavBarContainer = styled.div`
-  /* position: absolute; // Posicionamento
-  top: 0;
-  left: 0;
-  z-index: 10; */
-
   display: flex; // Flexbox
   flex-direction: row;
   align-items: center;
@@ -44,7 +39,6 @@ export const NavBarContainer = styled.div`
 
     &:hover,
     &.active {
-      // Pseudo-classes para interação
       color: ${colors.linkHover};
       border-bottom: 2px solid ${colors.linkHover};
     }
@@ -56,6 +50,7 @@ export const NavBarContainer = styled.div`
 
 export const Logo = styled.img`
   width: 50vw;
+  height: auto;
   @media (min-width: 768px) {
     width: 40vw;
   }
