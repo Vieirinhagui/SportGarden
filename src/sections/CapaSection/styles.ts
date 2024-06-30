@@ -3,21 +3,39 @@ import styled from "styled-components";
 export const SectionContainer = styled.section`
   width: 100vw;
   height: calc(100vh - 130px);
-  padding-top: 2rem;
+  position: relative;
 
   display: flex;
   align-items: center;
   justify-content: start;
   flex-direction: column;
-
-  background-image: url("capa.png") !important;
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-
   @media (min-width: 768px) {
     height: calc(100vh - 244px);
-    padding-top: 7rem;
+  }
+  @media (min-width: 1200px) {
+    height: calc(100vh - 210px);
+  }
+`;
+
+export const TextContainer = styled.div`
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+`;
+
+export const ImagemCapa = styled.img`
+  width: 100%;
+  height: calc(100vh - 130px);
+  object-fit: cover;
+  @media (min-width: 768px) {
+    height: calc(100vh - 244px);
+    /* padding-top: 7rem; */
   }
   @media (min-width: 1200px) {
     height: calc(100vh - 210px);
