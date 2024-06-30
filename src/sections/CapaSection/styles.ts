@@ -10,10 +10,10 @@ export const SectionContainer = styled.section`
   justify-content: start;
   flex-direction: column;
 
-  /* background-image: url("capa.png") !important;
+  background-image: url("capa.png") !important;
   background-size: cover;
   background-position: top;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 
   @media (min-width: 768px) {
     height: calc(100vh - 244px);
