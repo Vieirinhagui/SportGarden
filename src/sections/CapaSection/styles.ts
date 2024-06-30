@@ -10,7 +10,7 @@ export const SectionContainer = styled.section`
   justify-content: start;
   flex-direction: column;
 
-  background-image: url("capa.png");
+  background-image: url("capa.png") !important;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
