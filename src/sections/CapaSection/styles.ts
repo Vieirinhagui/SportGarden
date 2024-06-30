@@ -16,14 +16,10 @@ export const SectionContainer = styled.section`
   background-repeat: no-repeat;
 
   @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
     height: calc(100vh - 244px);
     padding-top: 7rem;
   }
-  @media (max-width: 1024px) {
-  }
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     height: calc(100vh - 210px);
   }
 `;
@@ -37,18 +33,16 @@ export const Title = styled.span`
   color: white;
 
   @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
     font-size: 50px;
   }
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
-    width: 100vw;
     font-size: 60px;
   }
-  @media screen and (min-width: 1440px) {
+  @media (min-width: 1440px) {
     font-size: 70px;
   }
 `;
+
 export const Paragraph = styled.span`
   width: 100vw;
   padding: 20px;
@@ -58,17 +52,10 @@ export const Paragraph = styled.span`
   color: white;
   margin-top: 1rem;
 
-  @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
-  }
-  @media (max-width: 1024px) {
-  }
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     width: 70vw;
   }
-  @media screen and (min-width: 1440px) {
-    font-size: 70px;
+  @media (min-width: 1440px) {
     font-size: 26px;
   }
 `;
