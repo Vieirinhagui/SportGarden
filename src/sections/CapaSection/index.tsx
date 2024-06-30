@@ -8,7 +8,10 @@ import {
 
 export const CapaSection = () => (
   <SectionContainer>
-    <ImagemCapa src="capa.png" alt="Descrição da imagem" />
+    <picture>
+      <source media="(min-width: 1200px)" srcSet="capa.png" />
+      <ImagemCapa src="capa-mobile.png" alt="Descrição da imagem" />
+    </picture>
     <TextContainer>
       <Title>Construção e Reforma de Quadras Esportivas</Title>
       <Paragraph>
