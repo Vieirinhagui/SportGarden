@@ -186,6 +186,7 @@ export const SocialMediaContainer = styled.div`
 
 export const Logo = styled.img`
   width: 100%;
+  max-width: 250px;
   @media (min-width: 768px) {
     width: 50%;
   }
