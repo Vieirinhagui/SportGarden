@@ -14,24 +14,24 @@ const buttonDimensions = {
   barWidth: "30px",
 };
 export const NavBarSection = styled.nav`
-  display: flex; // Flexbox
+  display: flex;
   flex-direction: column;
 `;
 export const NavBarContainer = styled.div`
-  display: flex; // Flexbox
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 
-  width: 100vw; // Dimensões
+  width: 100vw;
   height: 130px;
   padding: 16px 0;
 
-  background-color: ${colors.background}; // Cores e fonte
+  background-color: ${colors.background};
   font-size: 18px;
 
   a {
-    font-weight: bold; // Estilo dos links
+    font-weight: bold;
     text-decoration: none;
     color: ${colors.link};
     margin: 0 16px;
@@ -63,28 +63,28 @@ export const Logo = styled.img`
 `;
 
 export const MenuMobile = styled.div`
-  position: fixed; // Posicionamento
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
 
-  display: flex; // Flexbox
+  display: flex;
   flex-direction: column;
   align-items: start;
 
-  width: 100vw; // Dimensões
+  width: 100vw;
   height: 100vh;
-  overflow: hidden; // Escondendo overflow
-  padding-top: 10rem; // Espaçamento superior
-  background-color: ${colors.background}; // Cor de fundo
+  overflow: hidden;
+  padding-top: 10rem;
+  background-color: ${colors.background};
 
   div {
-    display: flex; // Flexbox para itens internos
+    display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 8px; // Espaçamento entre itens
-    font-size: 24px; // Tamanho da fonte
-    margin: 0 auto; // Centralizando horizontalmente
+    gap: 8px;
+    font-size: 24px;
+    margin: 0 auto;
   }
 `;
 
@@ -93,42 +93,42 @@ interface HamburguerButtonProps {
 }
 
 export const HamburguerButton = styled.button<HamburguerButtonProps>`
-  background: transparent; // Estilo do botão
+  background: transparent;
   border: none;
   cursor: pointer;
 
-  display: flex; // Configurações do flexbox
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
-  width: ${buttonDimensions.width}; // Dimensões do botão
+  width: ${buttonDimensions.width};
   height: ${buttonDimensions.height};
   padding: 0;
-  z-index: 11; // Posicionamento na stack de camadas
+  z-index: 11;
 
   div {
-    width: ${buttonDimensions.barWidth}; // Estilo das barras
+    width: ${buttonDimensions.barWidth};
     height: ${buttonDimensions.barHeight};
     background: ${colors.barBackground};
     border-radius: 50px;
     margin: 3px 0;
-    transition: transform 0.5s ease; // Transição para as transformações
+    transition: transform 0.5s ease;
 
     &:nth-child(1) {
-      transition: transform 0.5s ease; // Transição para as transformações
+      transition: transform 0.5s ease;
 
       // Transformações condicionais
       transform: ${({ isOpen }) =>
         isOpen ? "rotate(45deg) translate(7px, 6px)" : "none"};
     }
     &:nth-child(2) {
-      transition: transform 0.5s ease; // Transição para as transformações
+      transition: transform 0.5s ease;
 
       opacity: ${({ isOpen }) => (isOpen ? "0" : "1")};
     }
     &:nth-child(3) {
-      transition: transform 0.5s ease; // Transição para as transformações
+      transition: transform 0.5s ease;
 
       transform: ${({ isOpen }) =>
         isOpen ? "rotate(-45deg) translate(6px, -6px)" : "none"};

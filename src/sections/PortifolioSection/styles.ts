@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const SectionContainer = styled.section`
   width: 100vw;
-  /* height: 100vh; */
   padding: 4rem 1.25rem;
 
   display: flex;
@@ -10,7 +9,6 @@ export const SectionContainer = styled.section`
   align-items: center;
   justify-content: center;
   @media (min-width: 1440px) {
-    // Dispositivos extra grandes (telas wide)
     padding: 4rem 12rem;
   }
 `;
@@ -32,7 +30,6 @@ export const Title = styled.span`
   align-self: start;
   font-weight: bold;
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     font-size: 50px;
   }
 `;

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const SectionContainer = styled.section`
   width: 100vw;
-  /* height: 100vh; */
   background-color: #f3f3f3;
   padding: 4rem 1.25rem;
 
@@ -14,16 +13,10 @@ export const SectionContainer = styled.section`
     align-items: start;
   }
 
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-  }
-
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     width: 100%;
   }
   @media (min-width: 1440px) {
-    // Dispositivos extra grandes (telas wide)
     padding: 4rem 12rem;
   }
 `;
@@ -38,21 +31,11 @@ export const Container = styled.div`
   justify-content: center;
   gap: 2rem;
 
-  @media (max-width: 768px) {
-    // Dispositivos médios (tablets)
-  }
-
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-  }
-
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     width: 100%;
     flex-direction: row;
   }
   @media (min-width: 1440px) {
-    // Dispositivos extra grandes (telas wide)
     width: 100%;
     gap: 4rem;
     justify-content: space-between;
@@ -67,7 +50,6 @@ export const Title = styled.span`
   color: #00632c;
   font-weight: bold;
   @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
     font-size: 50px;
   }
 `;
@@ -77,7 +59,6 @@ export const Paragraph = styled.p`
   color: black;
   text-align: left;
   @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
     font-size: 20px;
   }
 `;

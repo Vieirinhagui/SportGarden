@@ -6,7 +6,6 @@ export const SectionContainer = styled.section`
   box-sizing: border-box;
 
   @media (min-width: 1440px) {
-    // Dispositivos extra grandes (telas wide)
     padding: 4rem 12rem;
   }
 `;
@@ -20,17 +19,7 @@ export const Container = styled.div`
   justify-content: space-between;
   flex-direction: column;
   gap: 2rem;
-
-  @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
-  }
-
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-  }
-
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     flex-direction: row;
   }
 `;
@@ -45,20 +34,10 @@ export const ContainerLeft = styled.div`
   flex-direction: column;
   gap: 1.5rem;
 
-  @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
-  }
-
   @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
     width: 40%;
   }
-
-  @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
-  }
   @media (min-width: 1440px) {
-    // Dispositivos extra grandes (telas wide)
     width: 30%;
   }
 `;
@@ -74,20 +53,10 @@ export const ContainerRight = styled.div`
   flex-direction: column;
   gap: 1rem;
 
-  @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
-  }
-
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-  }
-
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     max-width: 60%;
   }
   @media (min-width: 1440px) {
-    // Dispositivos extra grandes (telas wide)
     max-width: 60%;
   }
 `;
@@ -110,7 +79,6 @@ export const Title = styled.span`
   font-weight: bold;
 
   @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
     font-size: 50px;
   }
 `;
@@ -120,7 +88,6 @@ export const Paragraph = styled.p`
   color: black;
   text-align: left;
   @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
     font-size: 16px;
   }
 `;
@@ -151,12 +118,10 @@ export const ImagesContainer = styled.div`
   flex-direction: column;
   gap: 1rem;
   @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
     flex-direction: row;
     flex-wrap: wrap;
   }
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     align-items: start;
   }
 `;
@@ -166,21 +131,14 @@ export const Images = styled.img`
   height: 100%;
 
   @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
     width: 45%;
     height: 45%;
   }
 
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-  }
-
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     width: 30%;
   }
   @media (min-width: 1440px) {
-    // Dispositivos extra grandes (telas wide)
     width: 24%;
   }
 `;

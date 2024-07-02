@@ -35,7 +35,6 @@ export const ImagemCapa = styled.img`
   object-fit: cover;
   @media (min-width: 768px) {
     height: calc(100vh - 244px);
-    /* padding-top: 7rem; */
   }
   @media (min-width: 1200px) {
     height: calc(100vh - 210px);

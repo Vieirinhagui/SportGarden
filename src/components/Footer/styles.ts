@@ -12,26 +12,15 @@ export const SectionContainer = styled.section`
   justify-content: center;
   gap: 2rem;
 
-  @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
-  }
-
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-  }
-
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     justify-content: center;
     align-items: start;
     flex-direction: row;
     gap: 16rem;
   }
   @media (min-width: 1440px) {
-    // Dispositivos extra grandes (telas wide)
     padding: 4rem 12rem;
-  justify-content: space-between;
-
+    justify-content: space-between;
   }
 `;
 
@@ -45,16 +34,7 @@ export const FaleConoscoContainer = styled.div`
   justify-content: center;
   gap: 1rem;
 
-  @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
-  }
-
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-  }
-
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     width: 30%;
   }
 `;
@@ -65,16 +45,7 @@ export const Title = styled.span`
   color: white;
   font-weight: bold;
   @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
     font-size: 50px;
-  }
-
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-  }
-
-  @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
   }
 `;
 
@@ -83,7 +54,6 @@ export const Paragraph = styled.p`
   color: white;
   text-align: left;
   @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
     font-size: 20px;
   }
 `;
@@ -150,16 +120,8 @@ export const InfosContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
-  }
-
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-  }
 
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     width: 30%;
   }
 `;
@@ -196,16 +158,7 @@ export const InfosFooterContainer = styled.div`
   justify-content: center;
   gap: 2rem;
 
-  @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
-  }
-
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-  }
-
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -234,14 +187,12 @@ export const SocialMediaContainer = styled.div`
 export const Logo = styled.img`
   width: 100%;
   @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
     width: 50%;
   }
   @media (min-width: 1024px) {
     width: 30%;
   }
   @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
     width: 100%;
   }
 `;
