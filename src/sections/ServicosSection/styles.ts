@@ -145,8 +145,10 @@ export const Images = styled.img`
 
 export const CardContainer = styled.div`
   width: 100%;
-  min-height: 160px;
+  min-height: 140px;
+  height: 180px;
   background-color: white;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: row;
@@ -154,9 +156,21 @@ export const CardContainer = styled.div`
   justify-content: space-between;
   gap: 2rem;
 
-  padding: 28px;
+  padding: 18px;
 
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  p {
+    font-weight: bold;
+  }
+  span {
+    width: 100%;
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    span {
+      font-size: 16px;
+    }
+  }
 `;

@@ -188,12 +188,15 @@ export const Logo = styled.img`
   width: 100%;
   max-width: 200px;
   @media (min-width: 768px) {
+    max-width: 50%;
     width: 50%;
   }
   @media (min-width: 1024px) {
+    max-width: 30%;
     width: 30%;
   }
   @media (min-width: 1200px) {
+    max-width: 100%;
     width: 100%;
   }
 `;
@@ -207,8 +210,13 @@ export const BlackFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   span {
-    font-size: 16px;
+    font-size: 12px;
+  }
+
+  @media (min-width: 768px) {
+    span {
+      font-size: 16px;
+    }
   }
 `;
