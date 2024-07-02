@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SectionContainer = styled.section`
   width: 100vw;
-  height: calc(100vh - 130px);
+  height: calc(50vh - 130px);
   position: relative;
 
   display: flex;
@@ -30,8 +30,8 @@ export const TextContainer = styled.div`
 `;
 
 export const ImagemCapa = styled.img`
-  width: 100%;
-  height: calc(100vh - 130px);
+  width: 100vw;
+  height: calc(50vh - 130px);
   object-fit: cover;
   @media (min-width: 768px) {
     height: calc(100vh - 244px);
@@ -45,7 +45,7 @@ export const ImagemCapa = styled.img`
 export const Title = styled.span`
   width: 100vw;
   padding: 20px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
   color: white;
@@ -64,7 +64,7 @@ export const Title = styled.span`
 export const Paragraph = styled.span`
   width: 100vw;
   padding: 20px;
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 400;
   text-align: center;
   color: white;
@@ -72,6 +72,7 @@ export const Paragraph = styled.span`
 
   @media (min-width: 1200px) {
     width: 70vw;
+    font-size: 20px;
   }
   @media (min-width: 1440px) {
     font-size: 26px;

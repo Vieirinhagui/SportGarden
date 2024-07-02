@@ -2,33 +2,13 @@ import styled from "styled-components";
 
 export const SectionContainer = styled.section`
   width: 100vw;
-  padding: 4rem 1.25rem;
+  padding: 2rem 1.25rem;
   box-sizing: border-box;
 
   @media (min-width: 1440px) {
     // Dispositivos extra grandes (telas wide)
     padding: 4rem 12rem;
   }
-  /* @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
-    background-color: black;
-
-    max-width: 720px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-    background-color: purple;
-
-    max-width: 960px;
-  }
-
-  @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
-    background-color: green;
-    max-width: 1340px;
-  } */
 `;
 
 export const Container = styled.div`
@@ -39,7 +19,7 @@ export const Container = styled.div`
   align-items: start;
   justify-content: space-between;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
 
   @media (min-width: 768px) {
     // Dispositivos médios (tablets)
@@ -53,17 +33,6 @@ export const Container = styled.div`
     // Dispositivos extra grandes (telas wide)
     flex-direction: row;
   }
-  /* @media (min-width: 768px) {
-    // Dispositivos médios (tablets)
-  }
-
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-  }
-
-  @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
-  } */
 `;
 
 export const ContainerLeft = styled.div`
@@ -95,13 +64,13 @@ export const ContainerLeft = styled.div`
 `;
 
 export const ContainerRight = styled.div`
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 
   flex-grow: 1;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   flex-direction: column;
   gap: 1rem;
 
@@ -124,7 +93,7 @@ export const ContainerRight = styled.div`
 `;
 
 export const InfosContainer = styled.div`
-  width: 75%;
+  width: 100%;
   height: auto;
 
   display: flex;
@@ -152,7 +121,7 @@ export const Paragraph = styled.p`
   text-align: left;
   @media (min-width: 768px) {
     // Dispositivos médios (tablets)
-    font-size: 20px;
+    font-size: 16px;
   }
 `;
 
@@ -166,7 +135,6 @@ export const Button = styled.button`
   border: none;
   border-radius: 8px;
   cursor: pointer;
-
   &:hover {
     background-color: white;
     color: #00632c;
@@ -215,20 +183,11 @@ export const Images = styled.img`
     // Dispositivos extra grandes (telas wide)
     width: 24%;
   }
-  /* 
-
-  @media (min-width: 1024px) {
-    // Dispositivos grandes (desktops)
-  }
-
-  @media (min-width: 1200px) {
-    // Dispositivos extra grandes (telas wide)
-  } */
 `;
 
 export const CardContainer = styled.div`
   width: 100%;
-  height: 160px;
+  min-height: 160px;
   background-color: white;
 
   display: flex;

@@ -19,6 +19,17 @@ export const ServicosSection = () => {
   return (
     <SectionContainer>
       <Container>
+        {width < 768 && (
+          <InfosContainer>
+            <Title>Conheça nossos serviços</Title>
+            <Paragraph>
+              Estamos há mais de 15 anos no mercado de construção de quadras
+              esportivas, com obras entregues em todo o Brasil. Nosso
+              diferencial é realizar serviços com a mais alta qualidade e
+              personalização, de acordo com as necessidades do cliente.
+            </Paragraph>
+          </InfosContainer>
+        )}
         <ContainerLeft>
           <CardContainer>
             <img src="quadra_icon.png" alt="" />
@@ -53,23 +64,27 @@ export const ServicosSection = () => {
           </CardContainer>
         </ContainerLeft>
         <ContainerRight>
-          <InfosContainer>
-            <Title>Conheça nossos serviços</Title>
-            <Paragraph>
-              Estamos há mais de 15 anos no mercado de construção de quadras
-              esportivas, com obras entregues em todo o Brasil. Nosso
-              diferencial é realizar serviços com a mais alta qualidade e
-              personalização, de acordo com as necessidades do cliente.
-            </Paragraph>
-          </InfosContainer>
-          <ImagesContainer>
-            <Images src="Mask group.png" alt="" />
-            <Images src="Mask group-1.png" alt="" />
-            <Images src="Mask group-2.png" alt="" />
-            <Images src="Mask group-3.png" alt="" />
-            <Images src="Mask group-4.png" alt="" />
-            <Images src="Mask group-5.png" alt="" />
-          </ImagesContainer>
+          {width > 768 && (
+            <>
+              <InfosContainer>
+                <Title>Conheça nossos serviços</Title>
+                <Paragraph>
+                  Estamos há mais de 15 anos no mercado de construção de quadras
+                  esportivas, com obras entregues em todo o Brasil. Nosso
+                  diferencial é realizar serviços com a mais alta qualidade e
+                  personalização, de acordo com as necessidades do cliente.
+                </Paragraph>
+              </InfosContainer>
+              <ImagesContainer>
+                <Images src="Mask group.png" alt="" />
+                <Images src="Mask group-1.png" alt="" />
+                <Images src="Mask group-2.png" alt="" />
+                <Images src="Mask group-3.png" alt="" />
+                <Images src="Mask group-4.png" alt="" />
+                <Images src="Mask group-5.png" alt="" />
+              </ImagesContainer>
+            </>
+          )}
           <Button>VER MAIS</Button>
         </ContainerRight>
       </Container>

@@ -52,18 +52,24 @@ const NavBar = ({ isActive }: NavBarProps) => {
   const MenuLinksMobile = useCallback(
     () => (
       <>
-        <Link to="/" onClick={toggleIcon}>
-          Home
-        </Link>
-        <a href="#procedimentos" onClick={toggleIcon}>
-          Procedimentos
-        </a>
-        <a href="#avaliacoes" onClick={toggleIcon}>
-          Avaliações
-        </a>
-        <a href="#contato" onClick={toggleIcon}>
-          Contato
-        </a>
+        <NavLink to="/portifolio?tenis" onClick={toggleIcon}>
+          Quadras de Tênis
+        </NavLink>
+        <NavLink to="/portifolio?areia" onClick={toggleIcon}>
+          Quadras de Areia
+        </NavLink>
+        <NavLink to="/portifolio?poliesportiva" onClick={toggleIcon}>
+          Quadras Poliesportivas
+        </NavLink>
+        <NavLink to="/portifolio?futebol" onClick={toggleIcon}>
+          Campos de Futebol
+        </NavLink>
+        <NavLink to="/portifolio?grama" onClick={toggleIcon}>
+          Grama Sintética
+        </NavLink>
+        <NavLink to="/portifolio?pickleball" onClick={toggleIcon}>
+          Quadras de Pickleball
+        </NavLink>
       </>
     ),
     [toggleIcon]

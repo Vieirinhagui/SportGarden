@@ -27,6 +27,12 @@ export const SectionContainer = styled.section`
     flex-direction: row;
     gap: 16rem;
   }
+  @media (min-width: 1440px) {
+    // Dispositivos extra grandes (telas wide)
+    padding: 4rem 12rem;
+  justify-content: space-between;
+
+  }
 `;
 
 export const FaleConoscoContainer = styled.div`
@@ -185,8 +191,8 @@ export const InfosFooterContainer = styled.div`
   color: white;
 
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   gap: 2rem;
 
@@ -226,12 +232,12 @@ export const SocialMediaContainer = styled.div`
 `;
 
 export const Logo = styled.img`
-  width: 70%;
+  width: 100%;
   @media (min-width: 768px) {
     // Dispositivos médios (tablets)
     width: 50%;
   }
-  @media (max-width: 1024px) {
+  @media (min-width: 1024px) {
     width: 30%;
   }
   @media (min-width: 1200px) {
