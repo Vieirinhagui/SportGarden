@@ -24,13 +24,13 @@ export const CarouselContainer = styled.div`
     background-color: #00632c !important;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .swiper-slide {
       width: 70%;
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (min-width: 1024px) {
     .swiper-slide {
       width: 50%;
     }

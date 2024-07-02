@@ -134,7 +134,7 @@ export const InfosHeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
 `;
 
 export const InfosBodyContainer = styled.div`
@@ -154,7 +154,7 @@ export const InfosFooterContainer = styled.div`
 
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   gap: 2rem;
 
