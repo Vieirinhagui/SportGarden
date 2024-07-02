@@ -27,7 +27,7 @@ export const Container = styled.div`
 export const Title = styled.span`
   font-size: 30px;
   color: #00632c;
-  align-self: start;
+  align-self: center;
   font-weight: bold;
   @media (min-width: 1200px) {
     font-size: 50px;
