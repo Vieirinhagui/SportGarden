@@ -43,7 +43,7 @@ export const ImagemCapa = styled.img`
 
 export const Title = styled.span`
   width: 100vw;
-  padding: 20px;
+  padding-top: 20px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
@@ -62,7 +62,7 @@ export const Title = styled.span`
 
 export const Paragraph = styled.span`
   width: 100vw;
-  padding: 20px;
+  padding: 20px 20px 0;
   font-size: 12px;
   font-weight: 400;
   text-align: center;

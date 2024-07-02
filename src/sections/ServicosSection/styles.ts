@@ -69,7 +69,7 @@ export const InfosContainer = styled.div`
   align-items: center;
   justify-content: start;
   flex-direction: column;
-  gap: 1rem;
+  gap: .25rem;
 `;
 
 export const Title = styled.span`
