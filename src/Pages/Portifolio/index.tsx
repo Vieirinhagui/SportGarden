@@ -9,17 +9,25 @@ import {
   OptionsContainer,
 } from "./styles";
 import NavBar from "../../components/NavBar";
+import ImagesPath from "../../utils/ImagesPath.json";
+
+type ImageType = {
+  id: number;
+  path: string;
+  type: string;
+};
 
 const Portfolio = () => {
-  const [urls, setUrls] = useState<string[]>([]);
+  const [urls, setUrls] = useState<ImageType[]>([]);
+  const [filter, setFilter] = useState("todas");
 
   useEffect(() => {
-    const newUrls: string[] = [];
-    for (let i = 1; i <= 47; i++) {
-      newUrls.push(`/images/portifolio/${i}.jpg`);
-    }
-    setUrls(newUrls);
+    setUrls(ImagesPath);
   }, []);
+
+  const handleFilterClick = (selectedFilter: string) => {
+    setFilter(selectedFilter);
+  };
 
   return (
     <>
@@ -31,19 +39,56 @@ const Portfolio = () => {
             Baixar Portifolio
           </ButtonDownload>
           <OptionsContainer>
-            <OptionsButton className="activated">Todas</OptionsButton>
-            <OptionsButton>Saibro</OptionsButton>
-            <OptionsButton>Asfaltica</OptionsButton>
-            <OptionsButton>Areia</OptionsButton>
-            <OptionsButton>Poliesportiva</OptionsButton>
-            <OptionsButton>Grama</OptionsButton>
-            <OptionsButton>Pickeball</OptionsButton>
+            <OptionsButton
+              className={filter === "todas" ? "activated" : ""}
+              onClick={() => handleFilterClick("todas")}
+            >
+              Todas
+            </OptionsButton>
+            <OptionsButton
+              className={filter === "saibro" ? "activated" : ""}
+              onClick={() => handleFilterClick("saibro")}
+            >
+              Saibro
+            </OptionsButton>
+            <OptionsButton
+              className={filter === "asfaltica" ? "activated" : ""}
+              onClick={() => handleFilterClick("asfaltica")}
+            >
+              Asfáltica
+            </OptionsButton>
+            <OptionsButton
+              className={filter === "areia" ? "activated" : ""}
+              onClick={() => handleFilterClick("areia")}
+            >
+              Areia
+            </OptionsButton>
+            <OptionsButton
+              className={filter === "poliesportiva" ? "activated" : ""}
+              onClick={() => handleFilterClick("poliesportiva")}
+            >
+              Poliesportiva
+            </OptionsButton>
+            <OptionsButton
+              className={filter === "grama" ? "activated" : ""}
+              onClick={() => handleFilterClick("grama")}
+            >
+              Grama
+            </OptionsButton>
+            <OptionsButton
+              className={filter === "pickeball" ? "activated" : ""}
+              onClick={() => handleFilterClick("pickeball")}
+            >
+              Pickeball
+            </OptionsButton>
           </OptionsContainer>
         </ButtonsContainer>
         <ImagesContainer>
-          {urls.map((url, index) => (
-            <Image src={url} key={index} alt="" />
-          ))}
+          {urls
+            .filter((url) => filter === "todas" || url.type === filter)
+            .map((url, index) => (
+              <Image src={url.path} key={index} alt="" />
+            ))}
         </ImagesContainer>
       </Container>
     </>
