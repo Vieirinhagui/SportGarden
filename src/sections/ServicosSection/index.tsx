@@ -15,7 +15,6 @@ import {
 
 export const ServicosSection = () => {
   const [width] = useState(window.innerWidth);
-  console.log(width);
   return (
     <SectionContainer>
       <Container>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const colors = {
@@ -37,14 +37,29 @@ export const NavBarContainer = styled.div`
     margin: 0 16px;
     cursor: pointer;
 
-    &:hover,
+    /* &:hover,
     &.active {
       color: ${colors.linkHover};
       border-bottom: 2px solid ${colors.linkHover};
     }
+     */
   }
   @media (min-width: 768px) {
     height: 176px;
+  }
+`;
+
+export const StyledNavLink = styled(NavLink)`
+  font-weight: bold;
+  text-decoration: none;
+  color: ${colors.link};
+  margin: 0 16px;
+  cursor: pointer;
+
+  &:hover,
+  &.active {
+    color: ${colors.linkHover};
+    border-bottom: 2px solid ${colors.linkHover};
   }
 `;
 

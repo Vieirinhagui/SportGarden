@@ -25,8 +25,20 @@ const Portfolio = () => {
     setUrls(ImagesPath);
   }, []);
 
+  useEffect(() => {
+    const hash = window.location.hash;
+    const params = new URLSearchParams(hash.split("?")[1]);
+    const initialFilter = params.get("filter");
+    if (initialFilter) {
+      setFilter(initialFilter);
+    }
+  }, []);
+
   const handleFilterClick = (selectedFilter: string) => {
     setFilter(selectedFilter);
+    const url = new URL(window.location.href);
+    url.hash = `#/portifolio?filter=${selectedFilter}`;
+    window.history.pushState({}, "", url);
   };
 
   return (
