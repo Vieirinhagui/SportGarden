@@ -103,14 +103,16 @@ const NavBar = ({ isActive }: NavBarProps) => {
       </NavBarContainer>
       {!isMobile && isActive && (
         <ButtonsNavBar>
-          <NavLink to="/portifolio?tenis">Quadras de Tênis</NavLink>
-          <NavLink to="/portifolio?areia">Quadras de Areia</NavLink>
-          <NavLink to="/portifolio?poliesportiva">
+          <NavLink to="/portifolio?filter=todas">Quadras de Tênis</NavLink>
+          <NavLink to="/portifolio?filter=areia">Quadras de Areia</NavLink>
+          <NavLink to="/portifolio?filter=poliesportiva">
             Quadras Poliesportivas
           </NavLink>
-          <NavLink to="/portifolio?futebol">Campos de Futebol</NavLink>
-          <NavLink to="/portifolio?grama">Grama Sintética</NavLink>
-          <NavLink to="/portifolio?pickleball">Quadras de Pickleball</NavLink>
+          <NavLink to="/portifolio?filter=futebol">Campos de Futebol</NavLink>
+          <NavLink to="/portifolio?filter=grama">Grama Sintética</NavLink>
+          <NavLink to="/portifolio?filter=pickeball">
+            Quadras de Pickleball
+          </NavLink>
         </ButtonsNavBar>
       )}
     </NavBarSection>
