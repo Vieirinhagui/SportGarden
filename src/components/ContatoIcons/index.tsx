@@ -2,21 +2,22 @@ import { Mail, Phone } from "lucide-react";
 import { DivIcons, IconsBackGround, ParagraphIcons, SpanIcons } from "./styles";
 
 interface ContatoIconsProps {
+  className?: string;
   href: string;
   endereco: string;
   type: "WhatsApp" | "E-mail" | "Telefone";
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  onClick?: any;
+  onClick?: () => void;
 }
 
 export const ContatoIcons = ({
+  className,
   endereco,
   href,
   type,
   onClick,
 }: ContatoIconsProps) => {
   return (
-    <DivIcons onClick={onClick}>
+    <DivIcons onClick={onClick} className={className}>
       <IconsBackGround>
         {type === "WhatsApp" && (
           <svg

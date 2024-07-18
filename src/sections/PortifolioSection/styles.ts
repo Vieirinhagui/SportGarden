@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const SectionContainer = styled.section`
@@ -34,16 +35,19 @@ export const Title = styled.span`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
   color: white;
   font-size: 18px;
   font-weight: bold;
   background-color: #00632c;
+  text-decoration: none;
+  transition: 0.7s;
   padding: 8px 24px;
   outline: none;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 8px;
   cursor: pointer;
+  box-sizing: border-box;
 
   &:hover {
     background-color: white;

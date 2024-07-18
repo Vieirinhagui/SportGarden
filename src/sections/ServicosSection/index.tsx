@@ -84,7 +84,7 @@ export const ServicosSection = () => {
               </ImagesContainer>
             </>
           )}
-          <Button>VER MAIS</Button>
+          <Button to="/portifolio">VER MAIS</Button>
         </ContainerRight>
       </Container>
     </SectionContainer>

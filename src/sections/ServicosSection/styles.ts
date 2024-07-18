@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const SectionContainer = styled.section`
@@ -69,7 +70,7 @@ export const InfosContainer = styled.div`
   align-items: center;
   justify-content: start;
   flex-direction: column;
-  gap: .25rem;
+  gap: 0.25rem;
 `;
 
 export const Title = styled.span`
@@ -92,16 +93,19 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
   color: white;
   font-size: 18px;
   font-weight: bold;
+  text-decoration: none;
   background-color: #00632c;
   padding: 8px 24px;
   outline: none;
-  border: none;
+  border: 1px solid transparent;
+
   border-radius: 8px;
   cursor: pointer;
+  transition: 0.7s;
   &:hover {
     background-color: white;
     color: #00632c;

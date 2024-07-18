@@ -5,8 +5,11 @@ import {
   IconsContainer,
   Logo,
   MenuMobile,
+  MenuMobileContainer,
   NavBarContainer,
   NavBarSection,
+  RedesContainerMobile,
+  StyledNavLink,
 } from "./styles";
 import { Link, NavLink } from "react-router-dom";
 import { ContatoIcons } from "../ContatoIcons";
@@ -51,26 +54,44 @@ const NavBar = ({ isActive }: NavBarProps) => {
   );
   const MenuLinksMobile = useCallback(
     () => (
-      <>
-        <NavLink to="/portifolio?filter=todas" onClick={toggleIcon}>
+      <MenuMobileContainer>
+        <StyledNavLink to="/portifolio?filter=todas" onClick={toggleIcon}>
           Quadras de Tênis
-        </NavLink>
-        <NavLink to="/portifolio?filter=areia" onClick={toggleIcon}>
+        </StyledNavLink>
+        <StyledNavLink to="/portifolio?filter=areia" onClick={toggleIcon}>
           Quadras de Areia
-        </NavLink>
-        <NavLink to="/portifolio?filter=poliesportiva" onClick={toggleIcon}>
+        </StyledNavLink>
+        <StyledNavLink
+          to="/portifolio?filter=poliesportiva"
+          onClick={toggleIcon}
+        >
           Quadras Poliesportivas
-        </NavLink>
-        <NavLink to="/portifolio?filter=futebol" onClick={toggleIcon}>
+        </StyledNavLink>
+        <StyledNavLink to="/portifolio?filter=futebol" onClick={toggleIcon}>
           Campos de Futebol
-        </NavLink>
-        <NavLink to="/portifolio?filter=grama" onClick={toggleIcon}>
+        </StyledNavLink>
+        <StyledNavLink to="/portifolio?filter=grama" onClick={toggleIcon}>
           Grama Sintética
-        </NavLink>
-        <NavLink to="/portifolio?filter=pickleball" onClick={toggleIcon}>
+        </StyledNavLink>
+        <StyledNavLink to="/portifolio?filter=pickleball" onClick={toggleIcon}>
           Quadras de Pickleball
-        </NavLink>
-      </>
+        </StyledNavLink>
+        <RedesContainerMobile>
+          <ContatoIcons
+            className="alignRight"
+            onClick={toggleIcon}
+            endereco="(61) 9 9970-6589"
+            href="https://wa.me/5561999706589"
+            type="WhatsApp"
+          />
+          <ContatoIcons
+            onClick={toggleIcon}
+            endereco="contato@sportgarden.com.br"
+            href="mailto:contato@sportgarden.com.br"
+            type="E-mail"
+          />
+        </RedesContainerMobile>
+      </MenuMobileContainer>
     ),
     [toggleIcon]
   );
@@ -93,7 +114,7 @@ const NavBar = ({ isActive }: NavBarProps) => {
             </HamburguerButton>
             {isMenuOpen && (
               <MenuMobile>
-                <div>{MenuLinksMobile()}</div>
+                <>{MenuLinksMobile()}</>
               </MenuMobile>
             )}
           </>

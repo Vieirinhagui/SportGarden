@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const colors = {
@@ -30,37 +30,20 @@ export const NavBarContainer = styled.div`
   background-color: ${colors.background};
   font-size: 18px;
 
-  a {
-    font-weight: bold;
-    text-decoration: none;
-    color: ${colors.link};
-    margin: 0 16px;
-    cursor: pointer;
-
-    /* &:hover,
-    &.active {
-      color: ${colors.linkHover};
-      border-bottom: 2px solid ${colors.linkHover};
-    }
-     */
-  }
   @media (min-width: 768px) {
     height: 176px;
   }
 `;
 
-export const StyledNavLink = styled(NavLink)`
+export const StyledNavLink = styled(Link)`
+  width: 100%;
   font-weight: bold;
   text-decoration: none;
   color: ${colors.link};
-  margin: 0 16px;
   cursor: pointer;
-
-  &:hover,
-  &.active {
-    color: ${colors.linkHover};
-    border-bottom: 2px solid ${colors.linkHover};
-  }
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #b5b5b5;
 `;
 
 export const Logo = styled.img`
@@ -82,6 +65,8 @@ export const MenuMobile = styled.div`
   top: 0;
   left: 0;
   z-index: 10;
+  background-color: ${colors.background};
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -91,18 +76,32 @@ export const MenuMobile = styled.div`
   height: 100vh;
   overflow: hidden;
   padding-top: 10rem;
-  background-color: ${colors.background};
-
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 8px;
-    font-size: 24px;
-    margin: 0 auto;
-  }
 `;
 
+export const MenuMobileContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  font-size: 24px;
+  margin: 0 auto;
+`;
+
+export const RedesContainerMobile = styled.div`
+  margin-top: 1.5rem;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 8px;
+
+  .alignRight {
+    justify-content: start;
+  }
+`;
 interface HamburguerButtonProps {
   isOpen: boolean;
 }
@@ -178,34 +177,6 @@ export const ButtonsNavBar = styled.div`
   }
 `;
 
-export const IconsBackGround = styled.div`
-  width: 38px;
-  height: 38px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-`;
-
-export const SpanIcons = styled.span`
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-`;
-export const ParagraphIcons = styled.p`
-  font-size: 15px;
-  font-weight: 400;
-  color: white;
-`;
-export const DivIcons = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 1rem;
-`;
-
 export const IconsContainer = styled.div`
   display: flex;
   align-items: center;
@@ -223,5 +194,3 @@ export const IconsContainer = styled.div`
     gap: 5rem;
   }
 `;
-
-export const StyledLink = styled(Link)``;

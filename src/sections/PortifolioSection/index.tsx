@@ -25,7 +25,7 @@ export const PortifolioSection = () => {
         <Title>Portifólio</Title>
         {width > 768 && <CarrosselEstrutura fotos={fotosDesktop} />}
         {width < 768 && <CarrosselMobile fotos={fotosMobile} />}
-        <Button>VER MAIS</Button>
+        <Button to="/portifolio">VER MAIS</Button>
       </Container>
     </SectionContainer>
   );
