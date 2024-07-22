@@ -8,7 +8,6 @@ import {
   MenuMobileContainer,
   NavBarContainer,
   NavBarSection,
-  RedesContainerMobile,
   StyledNavLink,
 } from "./styles";
 import { Link, NavLink } from "react-router-dom";
@@ -76,21 +75,6 @@ const NavBar = ({ isActive }: NavBarProps) => {
         <StyledNavLink to="/portifolio?filter=pickleball" onClick={toggleIcon}>
           Quadras de Pickleball
         </StyledNavLink>
-        <RedesContainerMobile>
-          <ContatoIcons
-            className="alignRight"
-            onClick={toggleIcon}
-            endereco="(61) 9 9970-6589"
-            href="https://wa.me/5561999706589"
-            type="WhatsApp"
-          />
-          <ContatoIcons
-            onClick={toggleIcon}
-            endereco="contato@sportgarden.com.br"
-            href="mailto:contato@sportgarden.com.br"
-            type="E-mail"
-          />
-        </RedesContainerMobile>
       </MenuMobileContainer>
     ),
     [toggleIcon]

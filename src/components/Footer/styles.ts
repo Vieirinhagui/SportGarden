@@ -32,7 +32,7 @@ export const FaleConoscoContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.25rem;
 
   @media (min-width: 1200px) {
     width: 30%;
@@ -134,7 +134,7 @@ export const InfosHeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.25rem;
 `;
 
 export const InfosBodyContainer = styled.div`

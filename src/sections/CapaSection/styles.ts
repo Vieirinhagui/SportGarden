@@ -62,12 +62,11 @@ export const Title = styled.span`
 
 export const Paragraph = styled.span`
   width: 100vw;
-  padding: 20px 20px 0;
+  padding: 8px 20px 0;
   font-size: 12px;
   font-weight: 400;
   text-align: center;
   color: white;
-  margin-top: 1rem;
 
   @media (min-width: 1200px) {
     width: 70vw;
