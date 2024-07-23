@@ -189,7 +189,7 @@ export const CardContainer = styled.div`
     }
   }
   @media (min-width: 1280px) {
-    height: 136px;
+    height: 132px;
     img {
       width: 50%;
     }

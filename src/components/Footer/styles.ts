@@ -36,6 +36,7 @@ export const FaleConoscoContainer = styled.div`
 
   @media (min-width: 1200px) {
     width: 30%;
+    gap: 0;
   }
 `;
 
@@ -45,7 +46,7 @@ export const Title = styled.span`
   color: white;
   font-weight: bold;
   @media (min-width: 768px) {
-    font-size: 50px;
+    font-size: 40px;
   }
 `;
 
@@ -54,7 +55,8 @@ export const Paragraph = styled.p`
   color: white;
   text-align: left;
   @media (min-width: 768px) {
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 8px;
   }
 `;
 
@@ -72,7 +74,7 @@ export const FormContainer = styled.form`
 export const Input = styled.input`
   width: 100%;
   height: 32px;
-  padding: 16px;
+  padding: 16px 8px;
   background-color: white;
   border-radius: 8px;
   outline: none;
@@ -83,7 +85,7 @@ export const Textarea = styled.textarea`
   width: 100%;
   height: 150px;
   resize: none;
-  padding: 16px;
+  padding: 16px 8px;
   background-color: white;
   border-radius: 8px;
   outline: none;
@@ -160,8 +162,9 @@ export const InfosFooterContainer = styled.div`
 
   @media (min-width: 1200px) {
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     justify-content: center;
+    margin-top: 24px;
   }
 `;
 

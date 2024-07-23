@@ -12,10 +12,7 @@ export const DivIcons = styled.div`
     text-decoration: none;
   }
   @media screen and (min-width: 1200px) {
-    gap: 0.25rem;
-  }
-  @media screen and (min-width: 1200px) {
-    gap: 0.25rem;
+    gap: 0.5rem;
   }
 `;
 
