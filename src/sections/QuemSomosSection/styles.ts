@@ -15,6 +15,7 @@ export const SectionContainer = styled.section`
 
   @media (min-width: 1200px) {
     width: 100%;
+    padding: 3rem 7.5rem;
   }
   @media (min-width: 1440px) {
     padding: 4rem 12rem;
@@ -52,13 +53,13 @@ export const Title = styled.span`
   @media (min-width: 768px) {
     font-size: 50px;
   }
+  @media (min-width: 1280px) {
+    font-size: 40px;
+  }
 `;
 
 export const Paragraph = styled.p`
   font-size: 16px;
   color: black;
   text-align: left;
-  @media (min-width: 768px) {
-    font-size: 20px;
-  }
 `;

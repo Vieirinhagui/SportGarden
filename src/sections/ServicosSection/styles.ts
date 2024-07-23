@@ -5,7 +5,9 @@ export const SectionContainer = styled.section`
   width: 100vw;
   padding: 2rem 1.25rem;
   box-sizing: border-box;
-
+  @media (min-width: 1280px) {
+    padding: 4rem 7.5rem;
+  }
   @media (min-width: 1440px) {
     padding: 4rem 12rem;
   }
@@ -82,6 +84,9 @@ export const Title = styled.span`
   @media (min-width: 768px) {
     font-size: 50px;
   }
+  @media (min-width: 1280px) {
+    font-size: 40px;
+  }
 `;
 export const Paragraph = styled.p`
   width: 100%;
@@ -140,7 +145,7 @@ export const Images = styled.img`
   }
 
   @media (min-width: 1200px) {
-    width: 30%;
+    width: 31.5%;
   }
   @media (min-width: 1440px) {
     width: 30%;
@@ -181,6 +186,12 @@ export const CardContainer = styled.div`
     }
     img {
       width: 20%;
+    }
+  }
+  @media (min-width: 1280px) {
+    height: 136px;
+    img {
+      width: 50%;
     }
   }
 `;

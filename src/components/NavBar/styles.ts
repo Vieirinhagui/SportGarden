@@ -24,14 +24,16 @@ export const NavBarContainer = styled.div`
   justify-content: space-around;
 
   width: 100vw;
-  height: 130px;
+  height: 100px;
   padding: 16px 0;
 
   background-color: ${colors.background};
   font-size: 18px;
-
   @media (min-width: 768px) {
-    height: 176px;
+    height: 145px;
+  }
+  @media (min-width: 1280px) {
+    height: 115px;
   }
 `;
 
@@ -53,10 +55,12 @@ export const Logo = styled.img`
     width: 40vw;
   }
   @media (min-width: 1200px) {
-    width: 30vw;
+    width: 18vw;
+    margin-left: -7px;
   }
   @media screen and (min-width: 1440px) {
-    width: 20vw;
+    width: 15vw;
+    margin-left: 0;
   }
 `;
 
@@ -174,6 +178,11 @@ export const ButtonsNavBar = styled.div`
   a:hover {
     color: #00632c;
     transition: 0.2s;
+  }
+  @media screen and (min-width: 1280px) {
+    a {
+      font-size: 16px;
+    }
   }
 `;
 

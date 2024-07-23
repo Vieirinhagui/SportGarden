@@ -14,6 +14,9 @@ export const DivIcons = styled.div`
   @media screen and (min-width: 1200px) {
     gap: 0.25rem;
   }
+  @media screen and (min-width: 1200px) {
+    gap: 0.25rem;
+  }
 `;
 
 export const IconsBackGround = styled.div`
@@ -30,6 +33,9 @@ export const SpanIcons = styled.span`
   font-size: 20px;
   font-weight: bold;
   color: white;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
 `;
 export const ParagraphIcons = styled.p`
   font-size: 15px;

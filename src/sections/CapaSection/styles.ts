@@ -13,7 +13,7 @@ export const SectionContainer = styled.section`
     height: calc(100vh - 244px);
   }
   @media (min-width: 1200px) {
-    height: calc(100vh - 210px);
+    height: calc(100vh - 370px);
   }
 `;
 
@@ -37,7 +37,7 @@ export const ImagemCapa = styled.img`
     height: calc(100vh - 244px);
   }
   @media (min-width: 1200px) {
-    height: calc(100vh - 210px);
+    height: calc(100vh - 370px);
   }
 `;
 
@@ -53,7 +53,8 @@ export const Title = styled.span`
     font-size: 50px;
   }
   @media (min-width: 1200px) {
-    font-size: 60px;
+    width: 50vw;
+    font-size: 50px;
   }
   @media (min-width: 1440px) {
     font-size: 70px;
@@ -69,8 +70,8 @@ export const Paragraph = styled.span`
   color: white;
 
   @media (min-width: 1200px) {
-    width: 70vw;
-    font-size: 20px;
+    width: 40vw;
+    font-size: 16px;
   }
   @media (min-width: 1440px) {
     font-size: 26px;

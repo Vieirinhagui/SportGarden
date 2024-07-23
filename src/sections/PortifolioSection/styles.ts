@@ -9,6 +9,10 @@ export const SectionContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (min-width: 1280px) {
+    padding: 2rem 7.5rem;
+  }
+
   @media (min-width: 1440px) {
     padding: 4rem 12rem;
   }
@@ -31,7 +35,7 @@ export const Title = styled.span`
   align-self: center;
   font-weight: bold;
   @media (min-width: 1200px) {
-    font-size: 50px;
+    font-size: 40px;
   }
 `;
 
