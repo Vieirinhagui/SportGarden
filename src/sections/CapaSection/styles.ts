@@ -22,6 +22,7 @@ export const Onda = styled.img`
   height: 50px;
   z-index: 1;
   position: absolute;
+  bottom: 0;
   @media (min-width: 1280px) {
     height: 100px;
   }
