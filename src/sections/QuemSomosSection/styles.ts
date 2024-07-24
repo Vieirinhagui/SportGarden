@@ -18,7 +18,7 @@ export const SectionContainer = styled.section`
     padding: 3rem 7.5rem;
   }
   @media (min-width: 1440px) {
-    padding: 4rem 12rem;
+    padding: 4rem 18rem;
   }
 `;
 
@@ -62,4 +62,7 @@ export const Paragraph = styled.p`
   font-size: 16px;
   color: black;
   text-align: left;
+  @media (min-width: 1440px) {
+    font-size: 18px;
+  }
 `;

@@ -9,7 +9,7 @@ export const SectionContainer = styled.section`
     padding: 4rem 7.5rem;
   }
   @media (min-width: 1440px) {
-    padding: 4rem 12rem;
+    padding: 4rem 18rem;
   }
 `;
 
@@ -42,6 +42,7 @@ export const ContainerLeft = styled.div`
   }
   @media (min-width: 1440px) {
     width: 50%;
+    align-items: start;
   }
 `;
 
@@ -60,7 +61,7 @@ export const ContainerRight = styled.div`
     width: 60%;
   }
   @media (min-width: 1440px) {
-    width: 70%;
+    width: 55%;
   }
 `;
 
@@ -93,8 +94,8 @@ export const Paragraph = styled.p`
   font-size: 16px;
   color: black;
   text-align: left;
-  @media (min-width: 768px) {
-    font-size: 16px;
+  @media (min-width: 1440px) {
+    font-size: 18px;
   }
 `;
 
@@ -148,7 +149,7 @@ export const Images = styled.img`
     width: 31.5%;
   }
   @media (min-width: 1440px) {
-    width: 30%;
+    width: 28%;
   }
 `;
 
@@ -174,7 +175,7 @@ export const CardContainer = styled.div`
     font-weight: bold;
   }
   img {
-    width: 60%;
+    width: 45%;
   }
   span {
     width: 100%;
@@ -192,6 +193,14 @@ export const CardContainer = styled.div`
     height: 132px;
     img {
       width: 50%;
+    }
+  }
+  @media (min-width: 1440px) {
+    width: 80%;
+    height: 135px;
+
+    img {
+      width: 30%;
     }
   }
 `;

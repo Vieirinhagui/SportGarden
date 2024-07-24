@@ -19,7 +19,7 @@ export const SectionContainer = styled.section`
     gap: 16rem;
   }
   @media (min-width: 1440px) {
-    padding: 4rem 12rem;
+    padding: 4rem 18rem;
     justify-content: space-between;
   }
 `;
@@ -57,6 +57,9 @@ export const Paragraph = styled.p`
   @media (min-width: 768px) {
     font-size: 16px;
     margin-bottom: 8px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 18px;
   }
 `;
 
@@ -165,6 +168,9 @@ export const InfosFooterContainer = styled.div`
     align-items: end;
     justify-content: center;
     margin-top: 24px;
+  }
+  @media (min-width: 1440px) {
+    margin-top: 14px;
   }
 `;
 

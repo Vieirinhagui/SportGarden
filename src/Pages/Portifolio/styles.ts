@@ -10,7 +10,14 @@ export const Container = styled.div`
   justify-content: start;
   gap: 1rem;
   h1 {
+    font-size: 30px;
     color: #00632c;
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 40px;
+      color: #00632c;
+    }
   }
 `;
 
@@ -26,6 +33,7 @@ export const ButtonsContainer = styled.div`
 
 export const ButtonDownload = styled.a`
   padding: 0.5rem 1rem;
+  font-size: 18px;
   background-color: #00632c;
   color: white;
   text-decoration: none;
@@ -33,6 +41,9 @@ export const ButtonDownload = styled.a`
   outline: none;
   border-radius: 8px;
   align-self: center;
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
 `;
 
 export const OptionsContainer = styled.div`
@@ -52,6 +63,7 @@ export const OptionsButton = styled.button`
   border: 2px solid #00632c;
   outline: none;
   border-radius: 8px;
+  font-size: 18px;
   cursor: pointer;
   transition: 0.5s;
   &:hover {
@@ -62,6 +74,9 @@ export const OptionsButton = styled.button`
   &.activated {
     background-color: #00632c;
     color: white;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
   }
 `;
 

@@ -15,7 +15,7 @@ export const SectionContainer = styled.section`
   }
 
   @media (min-width: 1440px) {
-    padding: 4rem 12rem;
+    padding: 2rem 18rem;
   }
 `;
 

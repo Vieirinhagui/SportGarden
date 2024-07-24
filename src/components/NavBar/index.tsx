@@ -66,7 +66,7 @@ const NavBar = ({ isActive }: NavBarProps) => {
         >
           Quadras Poliesportivas
         </StyledNavLink>
-        <StyledNavLink to="/portifolio?filter=futebol" onClick={toggleIcon}>
+        <StyledNavLink to="/portifolio?filter=grama" onClick={toggleIcon}>
           Campos de Futebol
         </StyledNavLink>
         <StyledNavLink to="/portifolio?filter=grama" onClick={toggleIcon}>
@@ -113,7 +113,7 @@ const NavBar = ({ isActive }: NavBarProps) => {
           <NavLink to="/portifolio?filter=poliesportiva">
             Quadras Poliesportivas
           </NavLink>
-          <NavLink to="/portifolio?filter=futebol">Campos de Futebol</NavLink>
+          <NavLink to="/portifolio?filter=grama">Campos de Futebol</NavLink>
           <NavLink to="/portifolio?filter=grama">Grama Sintética</NavLink>
           <NavLink to="/portifolio?filter=pickeball">
             Quadras de Pickleball

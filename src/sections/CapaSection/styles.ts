@@ -57,7 +57,8 @@ export const Title = styled.span`
     font-size: 50px;
   }
   @media (min-width: 1440px) {
-    font-size: 70px;
+    width: 40vw;
+    font-size: 60px;
   }
 `;
 
@@ -74,6 +75,7 @@ export const Paragraph = styled.span`
     font-size: 16px;
   }
   @media (min-width: 1440px) {
-    font-size: 26px;
+    width: 35vw;
+    font-size: 22px;
   }
 `;
