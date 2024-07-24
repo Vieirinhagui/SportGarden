@@ -198,10 +198,6 @@ export const Logo = styled.img`
     max-width: 30%;
     width: 30%;
   }
-  @media (min-width: 1200px) {
-    max-width: 100%;
-    width: 100%;
-  }
 `;
 
 export const BlackFooter = styled.div`
