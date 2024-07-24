@@ -19,13 +19,11 @@ export const SectionContainer = styled.section`
 `;
 export const Onda = styled.img`
   width: 100vw;
-  /* margin-top: -25rem; */
+  height: 50px;
   z-index: 1;
-  max-height: 160px;
   position: absolute;
-  bottom: 0;
-  @media (min-width: 1200px) {
-    max-height: 100px;
+  @media (min-width: 1280px) {
+    height: 100px;
   }
 `;
 
