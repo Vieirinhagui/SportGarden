@@ -155,8 +155,7 @@ export const Images = styled.img`
 
 export const CardContainer = styled.div`
   width: 100%;
-  min-height: 100px;
-  height: 130px;
+  min-height: 130px;
   background-color: white;
   box-sizing: border-box;
 

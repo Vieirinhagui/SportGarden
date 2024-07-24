@@ -4,6 +4,7 @@ import {
   Paragraph,
   TextContainer,
   ImagemCapa,
+  Onda,
 } from "./styles";
 
 export const CapaSection = () => (
@@ -21,5 +22,6 @@ export const CapaSection = () => (
         para um novo nível.
       </Paragraph>
     </TextContainer>
+    <Onda src="./onda.png" />
   </SectionContainer>
 );

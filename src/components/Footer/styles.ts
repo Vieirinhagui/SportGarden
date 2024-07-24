@@ -11,7 +11,6 @@ export const SectionContainer = styled.section`
   align-items: center;
   justify-content: center;
   gap: 2rem;
-
   @media (min-width: 1200px) {
     justify-content: center;
     align-items: start;
@@ -24,6 +23,27 @@ export const SectionContainer = styled.section`
   }
 `;
 
+export const RelativeDiv = styled.div`
+  width: 100vw;
+  height: auto;
+  position: relative;
+  margin-top: 50px;
+  @media (min-width: 1280px) {
+    margin-top: 100px;
+  }
+`;
+export const Onda = styled.img`
+  width: 100vw;
+  height: 50px;
+  z-index: 1;
+  position: absolute;
+  top: -50px;
+  background-color: white;
+  @media (min-width: 1280px) {
+    height: 100px;
+    top: -100px;
+  }
+`;
 export const FaleConoscoContainer = styled.div`
   width: 100%;
   color: white;

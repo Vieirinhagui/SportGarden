@@ -10,7 +10,9 @@ import {
   InfosHeaderContainer,
   Input,
   Logo,
+  Onda,
   Paragraph,
+  RelativeDiv,
   SectionContainer,
   SocialMediaContainer,
   Textarea,
@@ -19,7 +21,8 @@ import {
 
 export const Footer = () => {
   return (
-    <>
+    <RelativeDiv>
+      <Onda src="./ondaVerde.png" />
       <SectionContainer>
         <FaleConoscoContainer>
           <Title>Fale Conosco</Title>
@@ -87,6 +90,6 @@ export const Footer = () => {
       <BlackFooter>
         <span>© SportGarden 2024. Todos os direitos reservados.</span>
       </BlackFooter>
-    </>
+    </RelativeDiv>
   );
 };

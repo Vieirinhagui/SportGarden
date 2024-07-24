@@ -9,11 +9,23 @@ export const SectionContainer = styled.section`
   align-items: center;
   justify-content: start;
   flex-direction: column;
+  z-index: 1;
   @media (min-width: 768px) {
     height: calc(100vh - 244px);
   }
   @media (min-width: 1200px) {
     height: calc(100vh - 370px);
+  }
+`;
+export const Onda = styled.img`
+  width: 100vw;
+  /* margin-top: -25rem; */
+  z-index: 1;
+  max-height: 160px;
+  position: absolute;
+  bottom: 0;
+  @media (min-width: 1200px) {
+    max-height: 100px;
   }
 `;
 
