@@ -72,7 +72,11 @@ const NavBar = ({ isActive }: NavBarProps) => {
         <StyledNavLink to="/portifolio?filter=grama" onClick={toggleIcon}>
           Grama Sintética
         </StyledNavLink>
-        <StyledNavLink to="/portifolio?filter=pickleball" onClick={toggleIcon}>
+        <StyledNavLink
+          style={{ border: "none" }}
+          to="/portifolio?filter=pickleball"
+          onClick={toggleIcon}
+        >
           Quadras de Pickleball
         </StyledNavLink>
       </MenuMobileContainer>

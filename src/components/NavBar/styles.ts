@@ -46,6 +46,10 @@ export const StyledNavLink = styled(Link)`
   padding-top: 0.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #b5b5b5;
+
+  .border-none {
+    border: 0px;
+  }
 `;
 
 export const Logo = styled.img`
