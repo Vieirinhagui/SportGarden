@@ -10,16 +10,6 @@ export const SectionContainer = styled.section`
   align-items: center;
   justify-content: center;
 
-  @media (min-width: 768px) {
-    background-color: blue;
-  }
-  @media (min-width: 1200px) {
-    background-color: purple;
-  }
-  @media (min-width: 1440px) {
-    background-color: yellow;
-  }
-
   @media (min-width: 1280px) {
     padding: 2rem 7.5rem;
   }
