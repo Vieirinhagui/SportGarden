@@ -22,7 +22,10 @@ import {
 export const Footer = () => {
   return (
     <RelativeDiv>
-      <Onda src="./ondaVerde.png" alt="" />
+      <picture>
+        <source media="(min-width: 1200px)" srcSet="./ondaVerde.png" />
+        <Onda src="./ondaVerde-mobile.png" alt="design de onda" />
+      </picture>
       <SectionContainer>
         <FaleConoscoContainer>
           <Title>Fale Conosco</Title>
