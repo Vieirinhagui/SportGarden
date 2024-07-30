@@ -31,7 +31,7 @@ export const ServicosSection = () => {
         )}
         <ContainerLeft>
           <CardContainer>
-            <img src="quadra_icon.png" alt="" />
+            <img src="quadra-icon.svg" alt="" />
             <div>
               <p>Construção de Quadras</p>
               <span>
@@ -41,7 +41,7 @@ export const ServicosSection = () => {
             </div>
           </CardContainer>
           <CardContainer>
-            <img src="rolo_icon.png" alt="" />
+            <img src="rolo-icon.svg" alt="" />
             <div>
               <p>Reforma e Manutenção</p>
               <span>
@@ -52,7 +52,7 @@ export const ServicosSection = () => {
             </div>
           </CardContainer>
           <CardContainer>
-            <img src="mais_icon.png" alt="" />
+            <img src="mais-icon.svg" alt="" />
             <div>
               <p>Acessórios em Geral</p>
               <span>
