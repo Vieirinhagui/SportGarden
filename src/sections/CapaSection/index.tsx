@@ -11,7 +11,7 @@ export const CapaSection = () => (
   <SectionContainer>
     <picture>
       <source media="(min-width: 1200px)" srcSet="capa.png" />
-      <ImagemCapa src="capa-mobile.png" alt="Descrição da imagem" />
+      <ImagemCapa src="./capa-mobile2.png" alt="Descrição da imagem" />
     </picture>
     <TextContainer>
       <Title>Construção e Reforma de Quadras Esportivas</Title>

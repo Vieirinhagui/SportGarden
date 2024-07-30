@@ -22,7 +22,7 @@ import {
 export const Footer = () => {
   return (
     <RelativeDiv>
-      <Onda src="./ondaVerde.png" />
+      <Onda src="./ondaVerde.png" alt="" />
       <SectionContainer>
         <FaleConoscoContainer>
           <Title>Fale Conosco</Title>
