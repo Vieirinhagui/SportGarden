@@ -22,6 +22,6 @@ export const CapaSection = () => (
         para um novo nível.
       </Paragraph>
     </TextContainer>
-    <Onda src="./onda.png" />
+    <Onda src="./onda.png" alt="design de onda" />
   </SectionContainer>
 );
