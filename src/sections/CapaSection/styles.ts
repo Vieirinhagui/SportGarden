@@ -13,9 +13,6 @@ export const SectionContainer = styled.section`
   @media (min-width: 768px) {
     height: calc(100vh - 244px);
   }
-  @media (min-width: 1200px) {
-    height: calc(100vh - 270px);
-  }
 `;
 export const Onda = styled.img`
   width: 100vw;
@@ -47,9 +44,6 @@ export const ImagemCapa = styled.img`
   object-fit: cover;
   @media (min-width: 768px) {
     height: calc(100vh - 244px);
-  }
-  @media (min-width: 1200px) {
-    height: calc(100vh - 270px);
   }
 `;
 
