@@ -14,7 +14,7 @@ export const SectionContainer = styled.section`
     height: calc(100vh - 244px);
   }
   @media (min-width: 1200px) {
-    height: calc(100vh - 370px);
+    height: calc(100vh - 270px);
   }
 `;
 export const Onda = styled.img`
@@ -25,7 +25,7 @@ export const Onda = styled.img`
   bottom: 0;
   left: 0;
   @media (min-width: 1280px) {
-    height: 100px;
+    height: 70px;
   }
 `;
 
@@ -49,7 +49,7 @@ export const ImagemCapa = styled.img`
     height: calc(100vh - 244px);
   }
   @media (min-width: 1200px) {
-    height: calc(100vh - 370px);
+    height: calc(100vh - 270px);
   }
 `;
 
