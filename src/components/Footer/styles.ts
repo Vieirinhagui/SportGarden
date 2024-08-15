@@ -216,21 +216,17 @@ export const SocialMediaContainer = styled.div`
 
 export const Logo = styled.img`
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
   @media (min-width: 768px) {
-    max-width: 50%;
     width: 50%;
   }
   @media (min-width: 1024px) {
-    max-width: 30%;
     width: 30%;
   }
   @media (min-width: 1280px) {
-    max-width: 35%;
     width: 35%;
   }
   @media (min-width: 1440px) {
-    max-width: 100%;
     width: 100%;
   }
 `;

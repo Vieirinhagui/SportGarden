@@ -6,18 +6,22 @@ export const PortifolioSection = () => {
   const width = window.innerWidth;
 
   const fotosMobile = [
-    "teste3.png",
-    "teste3.png",
-    "teste3.png",
-    "teste3.png",
-    "teste3.png",
+    "images/portifolio/2.jpg",
+    "images/portifolio/45.jpg",
+    "images/portifolio/5.jpg",
+    "images/portifolio/21.jpg",
+    "images/portifolio/39.jpg",
+    "images/portifolio/40.jpg",
+    "images/portifolio/44.jpg",
   ];
   const fotosDesktop = [
-    "teste.png",
-    "teste.png",
-    "teste.png",
-    "teste.png",
-    "teste.png",
+    "images/portifolio/2.jpg",
+    "images/portifolio/45.jpg",
+    "images/portifolio/5.jpg",
+    "images/portifolio/21.jpg",
+    "images/portifolio/39.jpg",
+    "images/portifolio/40.jpg",
+    "images/portifolio/44.jpg",
   ];
   return (
     <SectionContainer>
